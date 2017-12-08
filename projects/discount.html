@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="lib/mui/css/mui.css"/>
+	<link rel="stylesheet" type="text/css" href='css/discount.css'/>
+</head>
+<body>
+	<header id="back" class="mui-bar mui-bar-nav mui-clearfix">
+		
+			<a href="index.html" class="logo mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">国内折扣</h1>
+			
+		<a href="javascript:void(0);" class="down"><img src="images/header_app.png"/></a>
+	</header>
+	
+	<div class="m-main">
+		<div class="prod">
+			
+		</div>
+		<div class="go">
+			<a href="">前往购买</a>
+		</div>
+		<div class="pic2">
+               <img src="images/mmbweixin2.png"/>
+            </div>
+            <div class="talk">
+            	<!--<p></p>
+            	<form class="form">
+            		<textarea name="" rows="3" cols=""></textarea>
+            		<div class="fas">
+            		<input type="button" value="发表评论" class="btn"  />	
+            		</div>
+            	</form>-->
+            	
+            </div>
+	</div>
+	<div class="line">
+		
+	</div>
+	<footer>
+		<div class="wrap mui-clearfix">
+			<span>
+			<a href="javascript:void(0);">登录</a>
+			
+		</span>
+		<span><a href="javascript:void(0);">注册</a></span>
+		<span><a href="#back"><img src="http://www.zuyushop.com/wap/images/top.jpg" width="15" height="15">
+		返回顶部</a></span>
+		</div>
+		<!---->
+		<div class="foot">
+				<p><a href="javascript:void(0);">手机APP下载</a>&nbsp;<a href="javascript:void(0);">慢慢买手机版 </a>&nbsp; --&nbsp; 掌上比价平台</p>
+		<p>m.manmanbuy.com</p>
+		</div>
+	
+	</footer>
+	<script type="text/html" id="tpl">
+		<div class="title">
+			{{result[0].productName}}
+		</div>
+		<h4>{{result[0].productPrice}}</h4>
+		<p><span>{{result[0].productFrom}}</span>&nbsp;<span>{{result[0].productTime}}</span>&nbsp;<span>{{result[0].productTips}}</span></p>
+		<div class="pic">
+			<div class="img">
+				<img src="http://cacheimg.manmanbuy.com/r_img/cacheimg.aspx?width=600&amp;imgurl=j_sources/img/2016/10/24/190_190_0_36618798b6e1a98d9f4ae8f7a195f41b.jpg" alt="新低价：MTG Style 系列 中性 Body Make Seat Style 脊椎护腰坐垫">
+			</div>
+			<p>{{result[0].productInfo}}</p>
+			
+		</div>
+		<a href="">{{@result[0].productImg}}</a>
+	</script>
+	
+	<script type="text/html" id="tpl1">
+		{{@result[0].productComment}}
+	</script>
+</body>
+</html>
+<script type="text/javascript" src="lib/jquery/jquery.min.js" ></script>
+<script type="text/javascript" src="lib/mui/js/mui.js" ></script>
+<script type="text/javascript" src="lib/artTemplate/template-web.js"></script>
+<script type="text/javascript" src="js/all.js" ></script>
+<script type="text/javascript" src="js/discount.js" ></script>

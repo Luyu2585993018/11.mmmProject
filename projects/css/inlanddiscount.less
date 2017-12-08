@@ -1,0 +1,75 @@
+  @import url(all.less);
+  #back {
+      position: relative;
+      height: 1.25rem;
+      background: #ff841d;
+      overflow: hidden;
+      .mui-title {
+          line-height: 1.25rem;
+      }
+      h1 {
+          font-size: 0.5rem;
+          font-weight: bold;
+          color: white;
+      }
+      .mui-icon-back:before,
+      .mui-icon-left-nav:before {
+          .center-y();
+          padding: 0;
+          color: white;
+      }
+      .mui-bar .mui-icon {
+          padding-top: 0;
+          padding-bottom: 0;
+      }
+      .down {
+          height: 0.85rem;
+          width: 0.85rem;
+          .center-y();
+          right: 0.25rem;
+          img {
+              width: 100%;
+          }
+      }
+  }
+  
+  .gn-main {
+      ul {
+          box-sizing: border-box;
+          li {
+              padding: 0.25rem;
+              float: left;
+              width: 50%;
+              border: 1px solid #EEEEEE;
+              background: white;
+              a {
+                  display: block;
+                  text-align: left;
+                  .pic {
+                      margin: 0.25rem auto;
+                      width: 3.5rem;
+                      img {
+                          width: 100%;
+                      }
+                  }
+                  .dis {
+                      font-weight: bold;
+                      height: 0.95rem;
+                      line-break: 0.45rem;
+                      word-break: break-all;
+                      color: #333333;
+                      font-size: 0.35rem;
+                  }
+                  p {
+                      font-size: 14px;
+                      margin-bottom: 10px;
+                      color: #8f8f94;
+                  }
+                  span {
+                      font-size: 0.3rem;
+                      color: #a1a1a1;
+                  }
+              }
+          }
+      }
+  }

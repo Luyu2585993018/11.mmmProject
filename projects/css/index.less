@@ -1,0 +1,105 @@
+  @import url(all.less);
+  nav {
+      ul {
+          background: #F1F1F1;
+          padding: 0.25rem 0 0.125rem 0;
+          height: 5.5rem;
+          overflow: hidden;
+          transition: all 0.5s;
+          &.Height {
+              height: 7.9rem;
+          }
+          li {
+              padding-top: 0.5rem;
+              padding-bottom: 2rem;
+              float: left;
+              text-align: center;
+              width: 25%;
+              height: 1.8rem;
+              background: white;
+              a {
+                  display: block;
+                  height: 1.8rem;
+              }
+              img {
+                  width: 1.25rem;
+              }
+          }
+      }
+  }
+  
+  .linear {
+      padding-left: 10px;
+      height: 0.85rem;
+      background-image: linear-gradient(to bottom, #ffaf47, #ff9000);
+      position: relative;
+      span {
+          display: block;
+          line-height: 0.85rem;
+          height: 0.85rem;
+          font-size: 0.4rem;
+          .center-y();
+      }
+      img {
+          .center-y();
+          right: 5px;
+      }
+  }
+  
+  .main {
+      background: white;
+      li {
+          border-bottom: 1px solid #C7C7CC;
+          position: relative;
+          height: 3.375rem;
+          margin: 6px 0;
+          padding: 0.35rem 0.2rem;
+          a {
+              width: 100%;
+              height: 3.375rem;
+              img {
+                  padding: 0.25rem;
+                  .center-y();
+                  height: 100%;
+              }
+              div {
+                  font-size: 0.35rem;
+                  padding-left: 3.5rem;
+                  padding-right: 0.25rem;
+                  p {
+                      position: absolute;
+                      bottom: 0.25rem;
+                      font-size: 0.3rem;
+                  }
+                  span {
+                      font-size: 0.3rem;
+                      color: red;
+                  }
+              }
+          }
+      }
+  }
+  
+  .more-bar {
+      padding: 0.25rem 0.25rem 0 0.25rem;
+      background: white;
+      a {
+          text-align: center;
+          display: block;
+          line-height: 30px;
+          background: #F4F4F4;
+          font-size: 13px;
+          background-image: linear-gradient(#ffffff, #f4f4f4);
+          border: 1px solid #dddddd;
+          border-radius: 4px;
+      }
+  }
+  
+  .bot {
+      padding-top: 0.25rem;
+      background: #F1F1F1;
+  }
+  footer {
+      margin-top: 0;
+      padding-top: 0.75rem;
+  }

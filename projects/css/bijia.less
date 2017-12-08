@@ -1,0 +1,157 @@
+  @import url(all.less);
+  .linear {
+      padding-left: 10px;
+      height: 0.85rem;
+      background-image: linear-gradient(to bottom, #ffffff, #ebebeb);
+      position: relative;
+      border-top: 1px solid #ebebeb;
+      border-bottom: 1px solid #ccc;
+      height: 0.95rem;
+      line-height: 0.95rem;
+      font-size: 0.35rem;
+      nav {
+          display: block;
+          line-height: 0.85rem;
+          height: 0.85rem;
+          font-size: 0.4rem;
+          .center-y();
+      }
+      >a {
+          text-align: center;
+          font-size: 0.35rem;
+          display: block;
+          height: 0.7rem;
+          line-height: 0.7rem;
+          width: 1.5rem;
+          background-image: linear-gradient(to bottom, #d7d7d7, #f5f5f5);
+          border-radius: 0.15rem;
+          box-shadow: 0.025rem 0.025rem 0.025rem 0.025rem rgba(0, 0, 0, .4);
+          .center-y();
+          right: 5px;
+      }
+  }
+  
+  .more-bar {
+      margin-bottom: 0.5rem;
+      padding: 0.25rem 0.25rem 0 0.25rem;
+      background: white;
+      a {
+          
+          text-align: center;
+          display: block;
+          line-height: 30px;
+          background: #F4F4F4;
+          font-size: 13px;
+          background-image: linear-gradient(#ffffff, #f4f4f4);
+          border: 1px solid #dddddd;
+          border-radius: 4px;
+      }
+  }
+  
+  .bj-main {
+      .product {
+          .pro-main {
+              position: relative;
+              display: block;
+              height: 9.25rem;
+              padding: 0.4rem;
+              .des {
+                  width: 90%;
+                  height: 3rem;
+                  p {
+                      text-align: center;
+                      font-size: 0.45rem;
+                      color: #000000;
+                  }
+              }
+              .pic {
+                  width: 4.25rem;
+                  margin: 0 auto;
+              }
+              >img {
+                  width: 1rem;
+                  position: absolute;
+                  bottom: 0.5rem;
+                  right: 0.5rem;
+              }
+          }
+          .wrap {
+              position: relative;
+              margin-top: 0.75rem;
+              overflow: hidden;
+              span {
+                  float: left;
+                  text-align: center;
+                  border-right: 1px solid #c14d00;
+                  border-top: 1px solid #c14d00;
+                  border-bottom: 1px solid #c14d00;
+                  height: 0.85rem;
+                  line-height: 0.85rem;
+                  a {
+                      height: 100%;
+                      display: block;
+                      line-height: 0.85rem;
+                      font-size: 0.35rem;
+                  }
+                  &:nth-of-type(1) {
+                      width: 33.33%;
+                      background: linear-gradient(to bottom, #ffa632, #ff9000);
+                  }
+                  &:nth-of-type(2) {
+                      width: 33.33%;
+                      background: linear-gradient(to bottom, #ffd050, #ffbb00);
+                  }
+                  &:nth-of-type(3) {
+                      background: linear-gradient(to bottom, #ffd050, #ffbb00);
+                      width: 33.33%;
+                      border-right: none;
+                  }
+              }
+          }
+          .buy {
+              padding: 0.25rem 0;
+              position: relative;
+              font-size: 0.4rem;
+              .p_pic {
+                  text-align: center;
+                  vertical-align: middle;
+              }
+              .red {
+                  color: red;
+              }
+       }
+          
+      }
+     .discuss {
+         .title {
+             border-top: 4px solid #7a7a7a;
+             background: #dbdbdb;
+             height: 0.85rem;
+             text-align: center;
+             font-size: 0.35rem;
+             line-height: 0.85rem;
+         }
+         ul {
+             li {
+                 padding: 0.25rem;
+                 border-top: 1px solid #737373;
+                 .data {
+                     color: #666666;
+                     font-size: 0.35rem;
+                     height: 0.45rem;
+                     line-height: 0.45rem;
+                     span:nth-of-type(2){
+                         float: right;
+                     }
+                 }
+                 p {
+                         text-align: right;
+                 }
+                 .con {
+                     padding-top: 0.125rem;
+                     font-size: 0.3rem;
+                 }
+             }
+         }
+     } 
+  }
