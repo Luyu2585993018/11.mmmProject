@@ -8,7 +8,7 @@
 html,
 body {
   height: 100%;
-  max-width: 640px;
+  max-width: 960px;
   min-width: 320px;
   margin: 0 auto;
   background: white;
@@ -72,6 +72,43 @@ header .down {
   right: 0.25rem;
 }
 header .down img {
+  width: 100%;
+}
+#back {
+  position: relative;
+  height: 1.25rem;
+  background: #ff841d;
+  overflow: hidden;
+}
+#back .mui-title {
+  line-height: 1.25rem;
+}
+#back h1 {
+  font-size: 0.5rem;
+  font-weight: bold;
+  color: white;
+}
+#back .mui-icon-back:before,
+#back .mui-icon-left-nav:before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+  color: white;
+}
+#back .mui-bar .mui-icon {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#back .down {
+  height: 0.85rem;
+  width: 0.85rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0.25rem;
+}
+#back .down img {
   width: 100%;
 }
 footer {

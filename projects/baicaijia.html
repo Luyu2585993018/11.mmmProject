@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="lib/mui/css/mui.css"/>
+	<link rel="stylesheet" type="text/css" href='css/baicaijia.css'/>
+</head>
+<body>
+	<header id="back" class="mui-bar mui-bar-nav mui-clearfix">
+		
+			<a href="index.html" class="logo mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">白菜价-淘宝内部券
+</h1>
+			
+		<a href="javascript:void(0);" class="down"><img src="images/header_app.png"/></a>
+	</header>
+	<div class="bc-nav">
+			<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+    <div class="mui-scroll">
+    	<div class="ul">
+    		<!---->
+    	</div>
+     
+    </div>
+</div>
+	</div>
+	<div class="bc-main">
+			<ul>
+<!---->
+			</ul>
+		</div>
+		
+		
+		
+	<div class="line">
+		
+	</div>
+	<footer>
+		<div class="wrap mui-clearfix">
+			<span>
+			<a href="javascript:void(0);">登录</a>
+			
+		</span>
+		<span><a href="javascript:void(0);">注册</a></span>
+		<span><a href="#back"><img src="http://www.zuyushop.com/wap/images/top.jpg" width="15" height="15">
+		返回顶部</a></span>
+		</div>
+		<!---->
+		<div class="foot">
+				<p><a href="javascript:void(0);">手机APP下载</a>&nbsp;<a href="javascript:void(0);">慢慢买手机版 </a>&nbsp; --&nbsp; 掌上比价平台</p>
+		<p>m.manmanbuy.com</p>
+		</div>
+	
+	</footer>
+<script type="text/html" id="tpl1">
+	{{each result v i}}
+	<a href="javascript:;" class="mui-control-item {{i===0?'mui-active':''}}" data-titleid={{v.titleId}}>{{v.title}}</a>
+	{{/each}}
+</script>
+<script type="text/html" id="tpl2">
+	{{each result v i}}
+	<li>
+		<!--{{@v.productHref}}-->
+		<div class="pic">
+			{{@v.productImg}}
+		</div>
+		<div class="tit">
+			{{@v.productName}}
+		</div>
+		<p>{{@v.productPrice}}</p>
+		<div class="href mui-clearfix">
+			<div class="top">
+				<!--{{@v.productCoupon}}-->
+				{{@v.productCouponRemain}}
+			
+			</div>
+			<div class="lj">
+			<span class="l mui-clearfix">{{@v.productCoupon}}</span>
+			<span class="r mui-clearfix">{{@v.productHref}}</span>
+		</div>
+		</div>
+		
+	</li>
+	{{/each}}
+</script>
+</body>
+</html>
+<script type="text/javascript" src="lib/jquery/jquery.min.js" ></script>
+<script type="text/javascript" src="lib/mui/js/mui.js" ></script>
+<script type="text/javascript" src="lib/artTemplate/template-web.js"></script>
+<script type="text/javascript" src="js/all.js" ></script>
+<script type="text/javascript" src="js/baicaijia.js" ></script>

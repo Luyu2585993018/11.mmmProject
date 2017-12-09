@@ -8,7 +8,7 @@
 html,
 body {
   height: 100%;
-  max-width: 640px;
+  max-width: 960px;
   min-width: 320px;
   margin: 0 auto;
   background: white;
@@ -194,6 +194,77 @@ input[type='search'] {
 .line {
   height: 0.005rem;
 }
+.linear {
+  padding-left: 10px;
+  height: 0.85rem;
+  background-image: linear-gradient(to bottom, #ffffff, #ebebeb);
+  position: relative;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ccc;
+  height: 0.95rem;
+  line-height: 0.95rem;
+  font-size: 0.35rem;
+}
+.linear nav {
+  display: block;
+  line-height: 0.85rem;
+  height: 0.85rem;
+  font-size: 0.4rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.thr {
+  color: #874604;
+  background: #f3f3f3;
+  border: 1px solid #c8c8c8;
+  border-left: none;
+  border-right: none;
+  line-height: 0.9rem;
+  font-size: 0.35rem;
+  padding-left: 0.25rem;
+}
+.ph-main ul li {
+  border-bottom: 1px solid #e7e7e7;
+  padding: 10px;
+  background-image: url(../images/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: right center;
+}
+.ph-main ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.ph-main ul li a .l {
+  float: left;
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  text-align: center;
+  background: #c9c9c9;
+  color: #FFFFFF;
+  line-height: 0.5rem;
+  vertical-align: top;
+  margin: 0 0.25rem 0 0;
+  font-size: 0.35rem;
+}
+.ph-main ul li a .top1 {
+  background: #f10e0e;
+}
+.ph-main ul li a .top2 {
+  background: #ff9314;
+}
+.ph-main ul li a .top3 {
+  background: #8adf5b;
+}
+.ph-main ul li a .r {
+  overflow: hidden;
+}
+.ph-main ul li a .r .t {
+  color: black;
+}
 .main {
   background: white;
 }
@@ -201,12 +272,11 @@ input[type='search'] {
   border-bottom: 1px solid #C7C7CC;
   position: relative;
   height: 3.375rem;
-  margin: 0.15rem 0;
+  margin: 6px 0;
   padding: 0.35rem 0.2rem;
 }
 .main li a {
   width: 100%;
-  height: 3.375rem;
 }
 .main li a img {
   padding: 0.25rem;
@@ -225,44 +295,30 @@ input[type='search'] {
   bottom: 0.25rem;
   font-size: 0.3rem;
 }
-.main li a div span {
-  font-size: 0.3rem;
+.main li a div .price {
+  position: absolute;
+  top: 1.7rem;
+  left: 0;
+  font-size: 0.5rem;
   color: red;
 }
-.page {
-  height: 1.5rem;
-  position: relative;
+.discuss ul li {
+  padding: 0.25rem;
+  border-top: 1px solid #737373;
 }
-.page .pre,
-.page .next,
-.page .mid {
-  text-align: center;
-  line-height: 1rem;
-  background-image: linear-gradient(to bottom, #ffffff, #ebebeb);
-  border: 1px solid #ccc;
-  display: block;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 2rem;
-  height: 1rem;
-  border-radius: 0.125rem;
+.discuss ul li .data {
+  color: #666666;
+  font-size: 0.35rem;
+  height: 0.45rem;
+  line-height: 0.45rem;
 }
-.page .pre {
-  left: 0.375rem;
+.discuss ul li .data span:nth-of-type(2) {
+  float: right;
 }
-.page .next {
-  right: 0.375rem;
+.discuss ul li p {
+  text-align: right;
 }
-.page .mid {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 33%;
-  height: 78%;
-}
-.page .select {
-  width: 100%;
-  height: 100%;
+.discuss ul li .con {
+  padding-top: 0.125rem;
+  font-size: 0.3rem;
 }

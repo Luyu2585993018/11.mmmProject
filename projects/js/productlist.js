@@ -1,9 +1,15 @@
 $(function() {
 	
-	var s = Tools.getParam('category');
-		$('#category').html(s);
+//	var s = Tools.getParam('category');
+//		$('#category').html(s);
 	var categoryid = Tools.getParam('categoryid');	
 		
+		render('getcategorybyid',{
+				categoryid: categoryid
+			},function(data){
+		$('.thr').html(template('tpl2', data))
+				
+			})
 		
 		
 		

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="lib/mui/css/mui.css"/>
+	<link rel="stylesheet" type="text/css" href='css/gsproduct.css'/>
+</head>
+<body>
+	<header id="back" class="mui-bar mui-bar-nav mui-clearfix">
+		
+			<a href="index.html" class="logo mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">凑单品</h1>
+			
+		<a href="javascript:void(0);" class="down"><img src="images/header_app.png"/></a>
+	</header>
+	<div class="nav">
+		<select class="shop">
+<!---->
+		</select>
+		<select class="area">
+			<!---->
+		</select>
+		<select class="pri">
+			<option value="">全部价格</option>
+		</select>
+	</div>
+	<div class="cd-main">
+			<ul class="mui-clearfix">
+
+			</ul>
+		</div>
+		
+	<div class="line">
+		
+	</div>
+	<footer>
+		<div class="wrap mui-clearfix">
+			<span>
+			<a href="javascript:void(0);">登录</a>
+			
+		</span>
+		<span><a href="javascript:void(0);">注册</a></span>
+		<span><a href="#back"><img src="http://www.zuyushop.com/wap/images/top.jpg" width="15" height="15">
+		返回顶部</a></span>
+		</div>
+		<!---->
+		<div class="foot">
+				<p><a href="javascript:void(0);">手机APP下载</a>&nbsp;<a href="javascript:void(0);">慢慢买手机版 </a>&nbsp; --&nbsp; 掌上比价平台</p>
+		<p>m.manmanbuy.com</p>
+		</div>
+	
+	</footer>
+	<script type="text/html" id="tpl">
+	{{each result v i}}
+			<option value="{{v.shopId}}">{{v.shopName}}</option>
+		{{/each}}
+	</script>
+	<script type="text/html" id="tpl1">
+	{{each result v i}}
+			<option value="{{v.areaId}}">{{v.areaName}}</option>
+		{{/each}}
+	</script>
+	<script type="text/html" id="tpl2">
+	{{each result v i}}
+			<li>
+				<a href="javascript:;">
+					<div class="pic">
+						<img src="{{v.productImg}}"/>
+					</div>
+					<p class="mui-ellipsis-2">{{v.productName}}</p>
+					<div class="buy">
+						<span class="l">{{v.productPrice}}</span>
+						<span class="r">去购买</span>
+					</div>
+				</a>
+			</li>
+		{{/each}}
+	</script>
+</body>
+</html>
+<script type="text/javascript" src="lib/jquery/jquery.min.js" ></script>
+<script type="text/javascript" src="lib/mui/js/mui.js" ></script>
+<script type="text/javascript" src="lib/artTemplate/template-web.js"></script>
+<script type="text/javascript" src="js/all.js" ></script>
+<script type="text/javascript" src="js/gsproduct.js" ></script>
