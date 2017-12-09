@@ -9,6 +9,10 @@ $('.yhxq-main ul').on('click','a',function(){
 	$('.mask').addClass('mui-backdrop');
 	$('.mask img').css('display','block').addClass('center')
 })
+$('body').on('click','.mask',function(){
+	$('.mask').removeClass('mui-backdrop');
+	$('.mask img').css('display','none').removeClass('center')
+})
 
 
 $.ajax({

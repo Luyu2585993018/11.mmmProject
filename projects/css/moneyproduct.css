@@ -8,7 +8,7 @@
 html,
 body {
   height: 100%;
-  max-width: 640px;
+  max-width: 960px;
   min-width: 320px;
   margin: 0 auto;
   background: white;
@@ -301,7 +301,7 @@ input[type='search'] {
 .m-main .talk .form .ctrl {
   background-color: #fbfbfb;
   height: 0.9rem;
-  margin-left: -4px;
+  margin-left: -0.1rem;
   border-top: solid 1px #f2f2f2;
 }
 .m-main .talk .form .ctrl input {

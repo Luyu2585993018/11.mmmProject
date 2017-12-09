@@ -8,7 +8,7 @@
 html,
 body {
   height: 100%;
-  max-width: 640px;
+  max-width: 960px;
   min-width: 320px;
   margin: 0 auto;
   background: white;
@@ -74,9 +74,46 @@ header .down {
 header .down img {
   width: 100%;
 }
+#back {
+  position: relative;
+  height: 1.25rem;
+  background: #ff841d;
+  overflow: hidden;
+}
+#back .mui-title {
+  line-height: 1.25rem;
+}
+#back h1 {
+  font-size: 0.5rem;
+  font-weight: bold;
+  color: white;
+}
+#back .mui-icon-back:before,
+#back .mui-icon-left-nav:before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+  color: white;
+}
+#back .mui-bar .mui-icon {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#back .down {
+  height: 0.85rem;
+  width: 0.85rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0.25rem;
+}
+#back .down img {
+  width: 100%;
+}
 footer {
   position: relative;
-  padding-top: 0.75rem;
+  margin-top: 0.75rem;
   overflow: hidden;
   background: #F1F1F1;
 }
@@ -91,13 +128,11 @@ footer span {
 }
 footer span a {
   height: 100%;
-  display: block;
   line-height: 0.85rem;
   font-size: 0.35rem;
 }
 footer span:nth-of-type(1) {
   width: 30%;
-  border: ;
 }
 footer span:nth-of-type(2) {
   width: 30%;
@@ -192,7 +227,7 @@ input[type='search'] {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 5px;
+  right: 0.125rem;
 }
 .main {
   background: white;
@@ -201,7 +236,7 @@ input[type='search'] {
   border-bottom: 1px solid #C7C7CC;
   position: relative;
   height: 3.375rem;
-  margin: 6px 0;
+  margin: 0.15rem 0;
   padding: 0.35rem 0.2rem;
 }
 .main li a {
